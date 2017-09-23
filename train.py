@@ -8,7 +8,6 @@ from utils.timer import Timer
 from utils.fer2013 import Fer2013
 import numpy as np
 import CNN
-import CNN2
 
 # img1 = utils.load_image("./test_data/tiger.jpeg")
 # img1_true_result = [1 if i == 292 else 0 for i in range(7)]  # 1-hot result for tiger
@@ -17,7 +16,7 @@ import CNN2
 
 with tf.Session() as sess:
     # cnn = CNN.CNN_net()
-    cnn = CNN2.CNN_net()
+    cnn = CNN.CNN_net()
 
     sess.run(tf.global_variables_initializer())
     saver = tf.train.Saver(max_to_keep=1)

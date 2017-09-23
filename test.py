@@ -8,7 +8,6 @@ from utils.timer import Timer
 from utils.fer2013 import Fer2013
 import CNN
 import numpy as np
-import CNN2
 
 # img1 = utils.load_image("./test_data/tiger.jpeg")
 # img1_true_result = [1 if i == 292 else 0 for i in range(7)]  # 1-hot result for tiger
